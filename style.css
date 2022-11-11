@@ -1,14 +1,174 @@
+:root{
+    font-size: 62.5%;
+
+    --primary-color: #193A6A;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 body{
     max-width: 1920px;
+    width: 100%;
+    margin: auto;
+    font-family: 'Nunito', sans-serif;
 }
 
-.highlight .dog{
+.background-body img{
+    position: absolute;
+    right: 0;
+    width: 55vw;
+    z-index: -1000;
+}   
+
+/* --- */
+/* header */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1920px;
+    width: 100%;
+    padding: 3rem 11rem;
+}
+
+/* nav */
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+header nav ul li a, .user-account a{
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* user account */
+
+.user-account a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.user-account a img{
+    border-radius: 50rem;
+}
+
+/* --- */
+/* highlight */
+
+.highlight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.highlight-content .content-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.highlight-content .content-text h1{
+    font-size: 6.8rem;
+    color: var(--primary-color);
+    line-height: 8rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.highlight-content .content-text p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;  
+    text-align: center  
+}
+
+/* button */
+
+.highlight-content button{
+    background: var(--primary-color);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* content main subject */
+
+.content-main-subject{
+    display: flex;
+    gap: 3rem;
+}
+
+.content-main-subject article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-main-subject article picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50rem;
+    background: #EBF1FA;
+    margin-bottom: -3.5rem;
+    z-index: 1;
+}
+
+.content-main-subject article .box{
+    width: 23.3rem;
+    height: 11.5rem;
+    background: white;
+    border: 0.2rem solid #EBF1FA;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-main-subject article .box h5{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+
+.highlight .cat img, .highlight .dog img, .highlight .dog, .highlight .cat{
+    width: 50rem;
+    height: 60rem;
+}
+/* dog image */
+
+/* .highlight .dog{
     display: block;
     width: 600px;
     height: 600px;
@@ -37,10 +197,48 @@ body{
     width: 541px;
     height: 647px;
     transform: scale(0.8);
+} */
+
+/* --- */
+/* cat image */
+
+/* .highlight .cat{
+    display: block;
+    width: 500px;
+    height: 560px;
 }
 
-body > img{
+.highlight .cat::before{
+    content:" ";
+    background: url(./assets/cat-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
-    right: 0;
-    width: 50vw;
+    margin-top: 50px;
+    margin-left: -50px;
+    width: 568.18px;
+    height: 644.93px;
+    display: inline-block;
+    transform: scale(.8);
+}
+
+.highlight .cat::after{
+    display: inline-block;
+    content: '';
+    background: url(./assets/cat.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 428px;
+    height: 609px;
+    transform: scale(0.8);
+} */
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+footer .contact{
+    /* height: 25.4rem;
+    width: 29rem; */
 }

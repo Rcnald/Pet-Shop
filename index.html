@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Pet Shop</title>
 </head>
 <body>
-    <img src="./assets/bg.svg" alt="">
+    <picture class="background-body">
+        <img src="./assets/bg.svg" alt="Fundo do background">
+    </picture>
+
     <header>
         <picture class="website-logo">
-            <img src="./assets/logo.svg" alt="Logo da loja">
+            <img src="./assets/logo.svg" alt="Logo do site">
         </picture>
         <nav>
             <ul>
@@ -33,9 +42,76 @@
 
     <section class="highlight">
         <picture class="dog">
+            <img src="./assets/dog.svg" alt="">
         </picture>
+
+        <div class="highlight-content">
+            <div class="content-text">
+                <h1>A Melhor Equipe do Mundo com Animais de Estimação</h1>
+                <p>A Vetic é a primeira cadeia de clínicas modernas integradas à tecnologia da Índia para atender a todas as necessidades do seu animal de estimação, como bem-estar, consultas, higiene e nutrição.</p>
+            </div>
+
+            <button>
+                <img src="./assets/icon-paw.svg" alt="Pata de cachorro">
+                Cadastre seu pet
+            </button>
+
+            <div class="content-main-subject">
+                <article>
+                    <picture>
+                        <img src="./assets/icon-cat.svg" alt="gato">
+                    </picture>
+                    <div class="box"><h5>Animal</h5></div>
+                </article>
+
+                <article>
+                    <picture>
+                        <img src="./assets/icon-health.svg" alt="saudavel">
+                    </picture>
+                    <div class="box"><h5>Cliente</h5></div>
+                </article>
+                
+                <article>
+                    <picture>
+                        <img src="./assets/icon-shield.svg" alt="saúde">
+                    </picture>
+                    <div class="box"><h5>Dados</h5></div>
+                </article>
+            </div>
+        </div>
+
         <picture class="cat">
+            <img src="./assets/cat.svg" alt="">
         </picture>
     </section>
+
+    <footer>
+        <div class="contact">
+            <picture class="website-logo">
+                <img src="./assets/logo.svg" alt="Logo do site">
+            </picture>
+            <p>A Vetic é a primeira cadeia de clínicas modernas integradas à tecnologia da Índia para atender a todas as necessidades do seu animal de estimação, como bem-estar, consultas, higiene e nutrição.</p>
+            <div class="contact-reference">
+                <picture class="phone">
+                    <img src="./assets/phone.svg" alt="Telefone">
+                </picture>
+                <div class="contact-reference-info">
+                    <h5>(+91) 8929043121</h5>
+                    <p>Got Questions? Call us 24/7</p>
+                </div>
+            </div>
+        </div>
+        <div class="schedule">
+            <h6>Horario de funcionamento</h6>
+            <div class="box">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
