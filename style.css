@@ -145,6 +145,7 @@ header nav ul li a, .user-account a{
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .content-main-subject article picture{

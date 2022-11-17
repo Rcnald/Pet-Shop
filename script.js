@@ -20,6 +20,19 @@ document.onkeydown = function(event){
     }
 }
 
+function animation(){
+    openAnimalSignUp.style.scale = "1.1"
+    setTimeout(removeAnimation, 600)
+
+    openClientSignUp.style.scale = "1.1"
+    setTimeout(removeAnimation, 600)
+}
+
+function removeAnimation(){
+    openAnimalSignUp.style.scale = ""
+    openClientSignUp.style.scale = ""
+}
+
 function openModalClient(){
     openModal(clientSignUpModal)
 }
