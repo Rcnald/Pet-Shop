@@ -63,7 +63,7 @@
             </button>
 
             <div class="content-main-subject">
-                <article>
+                <article id="animalSignUpButton">
                     <picture>
                         <img src="./assets/icon-cat.svg" alt="gato">
                     </picture>
@@ -91,6 +91,39 @@
         </picture>
     </section>
 
+
+    <dialog id="animalSignUpModal">
+        <div class="backimage">
+            <img src="./assets/backimage-animal.png" alt="">
+        </div>
+
+        <div class="insert-data">
+            <div class="data-title">
+                <h4>Cadastre seu pet</h4>
+                <p>Começe adicionando seu animalzinho a sua lista de pets</p>
+            </div>
+
+            <form action="./index.html" method="post" id="animalSignUp">
+                <fieldset>
+                    <input type="text" id="name" name="name" placeholder="Nome">
+                    <input type="text" id="raca" name="raca" placeholder="Raça">
+                    <input type="number" id="idade" name="number" placeholder="Idade">
+                    <div class="select-box">
+                        <select name="porte" id="porte">
+                            <option value="" disabled selected>Porte</option>
+                            <option value="pequeno">Pequeno</option>
+                            <option value="medio">Médio</option>
+                            <option value="grande">Grande</option>
+                        </select>
+                        <span class="custom-arrow"></span>
+                    </div>
+                </fieldset>
+
+                <input type="submit" value="Adicionar pet">
+            </form>
+        </div>
+    </dialog>
+
     <dialog id="clientSignUpModal">
         <div class="insert-data">
             <div class="data-title">
@@ -98,31 +131,31 @@
                 <p>Vamos começar com um desconto de 30% ao criar sua conta!</p>
             </div>
 
-            <form action="" method="get" id="clientSignUp">
+            <form action="./index.html" method="post" id="clientSignUp">
                 <fieldset>
-                    <input type="text" id="name" name="name" placeholder="Nome">
-                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="text" id="name" name="name" placeholder="Nome" tabindex="1">
+                    <input type="email" id="email" name="email" placeholder="Email" tabindex="2">
                     <div class="passwordFildset">
-                        <input type="password" id="clientPassword" name="password" placeholder="Senha">
-                        <i class="bi bi-eye-slash" id="togglePassword" onclick="showPassword()"></i>
+                        <input type="password" id="clientPassword" name="password" placeholder="Senha" tabindex="3">
+                        <i class="bi bi-eye-slash" id="togglePassword" onclick="showPassword()" tabindex="4"></i>
                     </div>
                 </fieldset>
 
                 <fieldset>
-                    <input type="submit" value="Criar conta">
-                    <button>
+                    <input type="submit" value="Criar conta" tabindex="5">
+                    <button tabindex="6">
                         <img src="./assets/google-logo.svg" alt="google logo">
                         Criar com Google
                     </button>            
                 </fieldset>
             </form>
 
-            <p>Já tem uma conta?<strong> Não ligo</strong></p>
+            <p>Já tem uma conta?<strong tabindex="7 "> Não ligo</strong></p>
         </div>
 
         <picture class="backimage">
             <img src="./assets/backimage-client.png" alt="">
-        </picture>
+        </picture>    
     </dialog>
 
     <footer>
@@ -194,7 +227,7 @@
         <hr>
 
         <p class="footer-copyright">
-            Ramesh Velaga &copy; All rights reserved Copyrights 2022    
+            Ramesh Velaga &copy; Todos os direitos reservados Copyright 2022    
         </p>
     </footer>
 </body>

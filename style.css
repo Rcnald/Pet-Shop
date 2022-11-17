@@ -176,14 +176,13 @@ header nav ul li a, .user-account a{
     color: var(--primary-color);
 }
 
-
 .highlight .cat img, .highlight .dog img, .highlight .dog, .highlight .cat{
     width: 50rem;
     height: 60rem;
 }
 
 /* --- */
-/* sing up client */
+/* sign up client */
 
 .displayFlex{
     display: flex;
@@ -210,14 +209,15 @@ header nav ul li a, .user-account a{
 /* - */
 /* bg */
 
-#clientSignUpModal::backdrop{
+#clientSignUpModal::backdrop,
+#animalSignUpModal::backdrop{
     background: rgba(8, 8, 8, .5);
 }
 
 /* - */
 /* data */
 
-.insert-data{
+#clientSignUpModal .insert-data{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,20 +227,20 @@ header nav ul li a, .user-account a{
     height: 83.2rem;
 }
 
-.insert-data .data-title{
+#clientSignUpModal .insert-data .data-title{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.4rem;
 }
 
-.insert-data .data-title h4{
+#clientSignUpModal .insert-data .data-title h4{
     font-size: 3.2rem;
     font-weight: 600;
     color: var(--black-color);
 }
 
-.insert-data .data-title p{
+#clientSignUpModal .insert-data .data-title p{
     font-size: 1.4rem;
     font-weight: 500;
     color: var(--black-color);
@@ -249,13 +249,13 @@ header nav ul li a, .user-account a{
 /* - */
 /* input */
 
-.insert-data form fieldset{
+#clientSignUpModal .insert-data form fieldset{
     display: flex;  
     flex-direction: column;
     border: none;
 }
 
-.insert-data form{
+#clientSignUpModal .insert-data form{
     max-width: 42rem;
     width: 100%;
     display: flex;
@@ -346,12 +346,213 @@ header nav ul li a, .user-account a{
 /* - */
 /* image */
 
-#clientSignUpModal .backimage img,#clientSignUpModal .backimage{
+#clientSignUpModal .backimage img,
+#clientSignUpModal .backimage{
     max-width: 74.1rem;
     width: 100%;
     height: 83.2rem;
+    overflow: hidden;
 }
 
+/* #clientSignUpModal .backimage .exit{
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50rem;
+    border: 0.25rem solid black;
+    background: white;
+    margin-left: -50px;
+    margin-top: 50px;
+    content: "";
+}
+
+#clientSignUpModal .backimage .exit::before, #clientSignUpModal .backimage .exit::after{
+    content: " ";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: black;
+    transform: rotate(135deg);
+    margin-top: 8.5px;
+    margin-left: 2px;
+    border-radius: 50rem;
+}
+
+#clientSignUpModal .backimage .exit::after{
+    transform: rotate(45deg);
+} */
+
+/* --- */
+/* sign up animal */
+
+#animalSignUpModal{
+    max-width: 128rem;
+    width: 90%;
+    height: 83.2rem;
+    background: var(--white-color);
+    margin: auto;
+    border: none;
+    z-index: 1000;
+    gap: 2rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+/* - */
+/* image */
+
+#animalSignUpModal .backimage img,
+#animalSignUpModal .backimage{
+    max-width: 74.6rem;
+    width: 100%;
+    height: 84.2rem;
+    overflow: hidden;
+}
+
+/* - */
+/* data */
+
+#animalSignUpModal .insert-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    gap: 7.8rem;
+    height: 83.2rem;
+}
+
+#animalSignUpModal .insert-data .data-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.4rem;
+}
+
+#animalSignUpModal .insert-data .data-title h4{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+#animalSignUpModal .insert-data .data-title p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+/* - */
+/* input */
+
+#animalSignUpModal .insert-data form fieldset{
+    display: flex;  
+    flex-direction: column;
+    border: none;
+}
+
+#animalSignUpModal .insert-data form{
+    max-width: 42rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+#animalSignUpModal form fieldset{
+    gap: 3.6rem;
+}
+
+#animalSignUpModal form fieldset input{
+    border: none;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 0.6rem;
+    padding: 2.5rem;
+    font-size: 1.6rem;
+    color: #808080;
+}
+
+#animalSignUpModal form fieldset input::placeholder{
+    color: #aaaaaa;
+}
+
+#animalSignUpModal form fieldset input:focus,
+#animalSignUpModal form fieldset select:focus{
+    outline: none;
+}
+
+/* - */
+/* select */
+
+#animalSignUpModal form fieldset .select-box{
+    position: relative;
+}
+
+#animalSignUpModal form fieldset .select-box select{
+    max-width: 42rem;
+    width: 100%;
+    height: 6rem;
+    border-radius: 0.6rem;
+    border: none;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.06);
+    padding: 0 2.5rem;
+    font-size: 1.6rem;
+    color: #808080;
+    cursor: pointer;
+}
+
+#animalSignUpModal form fieldset .select-box .custom-arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 3rem;
+    height: 100%;
+    background: var(--white-color);
+    filter: brightness(.96);
+    pointer-events: none;/* o clique conta visualemente mas pro "backend" ele passa reto */
+}
+
+#animalSignUpModal form fieldset .select-box .custom-arrow::before,
+#animalSignUpModal form fieldset .select-box .custom-arrow::after{
+    --size: 0.6em;
+
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#animalSignUpModal form fieldset .select-box .custom-arrow::before{
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid rgba(0, 0, 0, .5);
+    top: 40%;
+}
+
+#animalSignUpModal form fieldset .select-box .custom-arrow::after{
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid rgba(0, 0, 0, .5);
+    top: 55%;
+}
+
+/* - */
+/* button */
+
+#animalSignUpModal form fieldset + input{
+    max-width: 42rem;
+    width: 100%;
+    height: 6rem;
+    background: #3A3A3A;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--white-color);
+    border-radius: 0.6rem;
+    border: none;
+}
 /* --- */
 /* footer */
 
