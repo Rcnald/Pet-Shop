@@ -1,0 +1,5 @@
+.content-main-subject article:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    filter: brightness(0.98);
+}

@@ -114,7 +114,7 @@ header nav ul li a, .user-account a{
 
 .highlight-content .content-text p{
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'Lato', sans-serif;  
     text-align: center  
 }
@@ -144,6 +144,7 @@ header nav ul li a, .user-account a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .content-main-subject article picture{
@@ -179,6 +180,176 @@ header nav ul li a, .user-account a{
 .highlight .cat img, .highlight .dog img, .highlight .dog, .highlight .cat{
     width: 50rem;
     height: 60rem;
+}
+
+/* --- */
+/* sing up client */
+
+.displayFlex{
+    display: flex;
+}
+
+.overflowHidden{
+    overflow: hidden;
+}
+
+#clientSignUpModal{
+    max-width: 128rem;
+    width: 90%;
+    height: 83.2rem;
+    background: var(--white-color);
+    margin: auto;
+    border: none;
+    z-index: 1000;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+/* - */
+/* bg */
+
+#clientSignUpModal::backdrop{
+    background: rgba(8, 8, 8, .5);
+}
+
+/* - */
+/* data */
+
+.insert-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    gap: 7.8rem;
+    height: 83.2rem;
+}
+
+.insert-data .data-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.4rem;
+}
+
+.insert-data .data-title h4{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.insert-data .data-title p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+/* - */
+/* input */
+
+.insert-data form fieldset{
+    display: flex;  
+    flex-direction: column;
+    border: none;
+}
+
+.insert-data form{
+    max-width: 42rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+#clientSignUpModal form fieldset:first-child{
+    gap: 3.6rem;
+}
+
+#clientSignUpModal form fieldset input,#clientSignUpModal form fieldset button{
+    max-width: 42rem;
+    width: 100%;
+    height: 6rem;
+}
+
+#clientSignUpModal form fieldset:first-child input{
+    border: none;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 0.6rem;
+    padding: 2.5rem;
+    font-size: 1.6rem;
+    color: #808080;
+}
+
+#clientSignUpModal form fieldset:first-child input::placeholder{
+    color: #aaaaaa;
+}
+
+#clientSignUpModal form fieldset:first-child input:focus{
+    outline: none;
+}
+
+#clientSignUpModal form fieldset:first-child .passwordFildset{
+    display: flex;
+    align-items: center;
+}
+
+#clientSignUpModal form fieldset:first-child .passwordFildset i{
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    scale: 2;
+    margin-top: 10px;
+    margin-left: -25px;
+}
+
+/* - */
+/* button */
+
+#clientSignUpModal form fieldset:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+#clientSignUpModal form fieldset:last-child input{
+    background: #3A3A3A;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--white-color);
+    border-radius: 0.6rem;
+    border: none;
+}
+
+#clientSignUpModal form fieldset:last-child button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #383838;
+    border: 0.3rem solid #3A3A3A;
+    border-radius: 0.6rem;
+}
+
+/* - */
+/* login message */
+
+#clientSignUpModal .insert-data p{
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* - */
+/* image */
+
+#clientSignUpModal .backimage img,#clientSignUpModal .backimage{
+    max-width: 74.1rem;
+    width: 100%;
+    height: 83.2rem;
 }
 
 /* --- */
@@ -226,7 +397,7 @@ footer .contact .website-logo img, footer .website-logo{
 footer .contact p{
     font-family: 'Lato', sans-serif; 
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--secondary-color);
     text-align: left;
 }
@@ -313,7 +484,7 @@ footer .schedule .box p:nth-child(6){
 footer .schedule .box p{
     text-align: center;
     font-family: 'Lato', sans-serif; 
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.8rem;
 }
 
@@ -356,7 +527,7 @@ footer nav li a{
     gap: 1rem;
     font-size: 1.8rem;
     font-family: 'Lato', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--secondary-color);
 }
 
@@ -381,7 +552,7 @@ footer .newsletter .box{
 footer .newsletter .box p{
     font-size: 1.8rem;
     font-family: 'Lato', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--secondary-color);
 }
 
@@ -398,7 +569,7 @@ footer .newsletter .box .send-email input{
     padding: 1.3rem;
     font-size: 1.8rem;
     font-family: 'Nunito', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 footer .newsletter .box .send-email input:focus{
@@ -436,7 +607,7 @@ footer hr{
 
 footer .footer-copyright{
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'Lato', sans-serif;
     color: var(--copyright-color);
     display: flex;
