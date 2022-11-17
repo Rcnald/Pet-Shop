@@ -22,15 +22,19 @@ document.onkeydown = function(event){
 
 function animation(){
     openAnimalSignUp.style.scale = "1.1"
+    openAnimalSignUp.style.filter = "brightness(0.98)"
     setTimeout(removeAnimation, 600)
 
     openClientSignUp.style.scale = "1.1"
+    openClientSignUp.style.filter = "brightness(0.98)"
     setTimeout(removeAnimation, 600)
 }
 
 function removeAnimation(){
     openAnimalSignUp.style.scale = ""
     openClientSignUp.style.scale = ""
+    openAnimalSignUp.style.filter = ""
+    openClientSignUp.style.filter = ""
 }
 
 function openModalClient(){

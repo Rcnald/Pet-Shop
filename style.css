@@ -472,6 +472,19 @@ header nav ul li a, .user-account a{
     color: #808080;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+
 #animalSignUpModal form fieldset input::placeholder{
     color: #aaaaaa;
 }
