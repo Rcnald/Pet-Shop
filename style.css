@@ -567,6 +567,110 @@ select {
     border-radius: 0.6rem;
     border: none;
 }
+
+/* --- */
+/* sign data */
+
+.sign-up-data{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3.7rem 0 0 0;
+    max-width: 162.2rem;
+    width: 100%;
+    height: 26.8rem;
+    background: rgba(84, 115, 159, 0.06);
+    backdrop-filter: blur(15px);    
+    position: relative;
+    border-radius: 2.6rem;
+    margin: 3rem auto;
+}
+
+/* - */
+/* image */
+
+.sign-up-data .dog{
+    position: absolute;
+    bottom: -30px;
+    left: 38px;
+}
+
+.sign-up-data .cat{
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    overflow: hidden;
+}
+
+.sign-up-data .cat img{
+    position: relative;
+    bottom: -70px;
+}
+
+/* inputs */
+
+.sign-data-content{
+    display: block;
+    max-width: 120rem;
+    width: 100%;
+    z-index: 1;
+} 
+
+.sign-data-content .data{
+    display: flex;
+    gap: 3rem;
+}
+
+.sign-data-content .data article{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sign-data-content .data article input{
+    width: 20rem;
+    height: 4.6rem;
+    padding: 0.5rem;
+    border: double 1.5px transparent;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(123deg, rgba(23,45,78,1) -10%, rgba(91,33,255,0.54) 64%, rgba(61,107,175,1) 92%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.sign-data-content .data article h6{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    color: var(--primary-color);
+}
+
+.sign-data-content .data .buttons{
+    display: flex;
+    align-items: flex-end;
+    gap: 3rem;
+}
+
+.sign-data-content .data .buttons a{
+    width: 100px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    border-radius: 1rem;
+}
+
+.sign-data-content .data .buttons a:nth-child(2),
+.sign-data-content .data .buttons a:nth-child(3){
+    display: n;
+}
+
 /* --- */
 /* footer */
 
