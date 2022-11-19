@@ -571,6 +571,38 @@ select {
 /* --- */
 /* sign data */
 
+.sign-up-data-animal{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    max-width: 162.2rem;
+    width: 100%;
+    min-height: 26.8rem;
+    margin: 30rem auto;
+    gap: 3rem;
+}
+
+.sign-up-data-animal .sign-up-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    gap: 1.5rem;
+}
+
+.sign-up-data-animal .sign-up-title h5{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.sign-up-data-animal .sign-up-title h2{
+    font-size: 4.6rem;
+    font-weight: 800;
+    color: var(--black-color);
+}
+
 .sign-up-data{
     display: flex;
     justify-content: center;
@@ -583,7 +615,6 @@ select {
     backdrop-filter: blur(15px);    
     position: relative;
     border-radius: 2.6rem;
-    margin: 30rem auto;
 }
 
 /* - */
