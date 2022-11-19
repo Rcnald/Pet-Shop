@@ -189,6 +189,10 @@ header nav ul li a, .user-account a{
     display: flex;
 }
 
+.displayNone{
+    display: none;
+}
+
 .overflowHidden{
     overflow: hidden;
 }
@@ -572,7 +576,6 @@ select {
 /* sign data */
 
 .sign-up-data-animal{
-    display: flex;
     justify-content: center;
     align-items: center;  
     flex-direction: column;
@@ -581,6 +584,7 @@ select {
     min-height: 26.8rem;
     margin: 30rem auto;
     gap: 3rem;
+    transition: 2s;
 }
 
 .sign-up-data-animal .sign-up-title{

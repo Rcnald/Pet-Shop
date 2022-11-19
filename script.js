@@ -6,11 +6,21 @@ const animalSignUpModal = document.getElementById('animalSignUpModal')
 
 const scrollBar = document.querySelector('body')
 
+const openData = document.getElementById('showDataButton')
+const showData = document.getElementById('sign-up-data-animal')
+
 const viewPassword = document.getElementById('togglePassword')
 const isTypePassword = document.getElementById("clientPassword");
 
 openClientSignUp.addEventListener('click', openModalClient)
 openAnimalSignUp.addEventListener('click', openModalAnimal)
+
+openData.addEventListener('click', openDataAnimal)
+
+function openDataAnimal(){
+    showData.classList.toggle('displayFlex')
+    showData.classList.toggle('displayNone')
+}
 
 document.onkeydown = function(event){
     if(event.key === 'Escape'){
