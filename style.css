@@ -571,6 +571,38 @@ select {
 /* --- */
 /* sign data */
 
+.sign-up-data-animal{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    max-width: 162.2rem;
+    width: 100%;
+    min-height: 26.8rem;
+    margin: 30rem auto;
+    gap: 3rem;
+}
+
+.sign-up-data-animal .sign-up-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    gap: 1.5rem;
+}
+
+.sign-up-data-animal .sign-up-title h5{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.sign-up-data-animal .sign-up-title h2{
+    font-size: 4.6rem;
+    font-weight: 800;
+    color: var(--black-color);
+}
+
 .sign-up-data{
     display: flex;
     justify-content: center;
@@ -578,12 +610,11 @@ select {
     padding: 3.7rem 0 0 0;
     max-width: 162.2rem;
     width: 100%;
-    height: 26.8rem;
+    min-height: 26.8rem;
     background: rgba(84, 115, 159, 0.06);
     backdrop-filter: blur(15px);    
     position: relative;
     border-radius: 2.6rem;
-    margin: 30rem auto;
 }
 
 /* - */
@@ -621,10 +652,20 @@ select {
     gap: 3rem;
 }
 
+.sign-data-content .data:last-child{
+    padding: 0 0 9rem 0;
+}
+
 .sign-data-content .data article{
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    margin: 0 0 3rem 0;
+}
+
+.sign-data-content .data hr { 
+    border: 0.5px solid var(--primary-color); 
+    border-radius: 40rem 40rem 0 0;
 }
 
 .sign-data-content .data article input{
@@ -650,6 +691,7 @@ select {
     display: flex;
     align-items: flex-end;
     gap: 3rem;
+    margin: 0 0 3rem 0;
 }
 
 .sign-data-content .data .buttons a{
@@ -668,7 +710,7 @@ select {
 
 .sign-data-content .data .buttons a:nth-child(2),
 .sign-data-content .data .buttons a:nth-child(3){
-    display: n;
+    display: flex;
 }
 
 /* --- */
