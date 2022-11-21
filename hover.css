@@ -1,4 +1,38 @@
+@import url(./style.css);
+
 .content-main-subject article:hover{
     scale: 1.1;
     filter: brightness(0.98);
+}
+
+.show-sign-up h2:hover{
+    color: rgba(91,33,255,0.7);;
+    filter: brightness(.5);
+}
+
+.show-sign-up h2:hover::after{
+    content: " ";
+    width: 16rem;
+    height: 5px;
+    border-radius: 50rem;
+    background: rgba(91,33,255,0.7);
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
+
+.switch{
+    color: rgba(91,33,255,0.7);;
+    filter: brightness(.5);
+}
+
+.switch-op::after{
+    content: " ";
+    width: 16rem;
+    height: 5px;
+    border-radius: 50rem;
+    background: rgba(91,33,255,0.7);
+    position: absolute;
+    bottom: 5px;
+    left: 0;
 }
