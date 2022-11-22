@@ -27,23 +27,46 @@ function openDataSignUp(){
     showData.classList.toggle('displayFlex')
     showData.classList.toggle('displayNone')
 
-    const addNameColumn = document.querySelector('#sign-up-data-client article:nth-child(1) article')
+    const addNameColumnClient = document.querySelector('#sign-up-data-client article:nth-child(1) article')
     const addEmailColumn = document.querySelector('#sign-up-data-client article:nth-child(1) article:nth-child(3)')
     const addPasswordColumn = document.querySelector('#sign-up-data-client article:nth-child(1) article:nth-child(5)')
 
-    const h6Name = document.createElement('h6')
+    const addNameColumnAnimal = document.querySelector('#sign-up-data-animal article:nth-child(1) article')
+    const addRacaColumn = document.querySelector('#sign-up-data-animal article:nth-child(1) article:nth-child(3)')
+    const addAgeColumn = document.querySelector('#sign-up-data-animal article:nth-child(1) article:nth-child(5)')
+    const addPorteColumn = document.querySelector('#sign-up-data-animal article:nth-child(1) article:nth-child(7)')
+
+    const h6NameClient = document.createElement('h6')
     const h6Email = document.createElement('h6')
     const h6Password = document.createElement('h6')
 
+    const h6NameAnimal = document.createElement('h6')
+    const h6Raca = document.createElement('h6')
+    const h6Age = document.createElement('h6')
+    const h6Porte = document.createElement('h6')
 
-    h6Name.innerText = "Nome"
+
+    h6NameClient.innerText = "Nome"
     h6Email.innerText = "Email"
     h6Password.innerText = "Senha"
 
-    if(addNameColumn.querySelector('h6') === null){
-        addNameColumn.prepend(h6Name)
+    h6NameAnimal.innerText = "Nome"
+    h6Raca.innerText = "Raça"
+    h6Age.innerText = "Idade"
+    h6Porte.innerText = "Porte"
+
+    if(addNameColumnClient.querySelector('h6') === null){
+        addNameColumnClient.prepend(h6NameClient)
         addEmailColumn.prepend(h6Email)
         addPasswordColumn.prepend(h6Password)
+    }
+
+    if(addNameColumnAnimal.querySelector('h6') === null){
+        addNameColumnAnimal.prepend(h6NameAnimal)
+        addRacaColumn.prepend(h6Raca)
+        addAgeColumn.prepend(h6Age)
+        addPorteColumn.prepend(h6Porte)
+
     }
     
 }
