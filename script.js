@@ -40,16 +40,12 @@ function openDataSignUp(){
     h6Email.innerText = "Email"
     h6Password.innerText = "Senha"
 
-    if(addNameColumn.querySelector('h6') !== null){
-        h6Name.parentNode.removeChild(h6Name)
-        h6Email.parentNode.removeChild(h6Email)
-        h6Password .parentNode.removeChild(h6Password)
+    if(addNameColumn.querySelector('h6') === null){
+        addNameColumn.prepend(h6Name)
+        addEmailColumn.prepend(h6Email)
+        addPasswordColumn.prepend(h6Password)
     }
     
-    addNameColumn.prepend(h6Name)
-    addEmailColumn.prepend(h6Email)
-    addPasswordColumn.prepend(h6Password)
-
 }
 
 
