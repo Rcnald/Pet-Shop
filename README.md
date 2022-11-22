@@ -1,1 +1,9 @@
-https://www.youtube.com/watch?v=4ToYGY0jp9w&t=137s
+# Pet shop
+
+## Techs
+
+- HTML
+- CSS
+- JS
+
+My first JS project.
