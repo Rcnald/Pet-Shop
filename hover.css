@@ -45,6 +45,7 @@ header nav ul li a:hover,
 .highlight-content button:hover{
     filter: brightness(1.3);
     scale: 1.1;
+    transition: 0.5s;
 }
 
 #clientSignUpModal form fieldset:last-child input:hover{
@@ -72,11 +73,13 @@ header nav ul li a:hover,
 
 #animalSignUpModal form fieldset + input:hover{
     filter: brightness(1.3);
+    transition: 0.5s;
 }
 
 .sign-data-content .data .buttons a:hover{
     scale: 1.1;
     filter: brightness(1.3);
+    transition: 0.5s;
 }
 
 footer nav li a:hover .marker{
@@ -86,6 +89,7 @@ footer nav li a:hover .marker{
 footer .newsletter .box .send-email button:hover{
     filter: brightness(1.3);
     scale: 1.1;
+    transition: 0.5s;
 }
 
 footer .contact .contact-reference .contact-reference-info h5 a:hover{
@@ -95,4 +99,5 @@ footer .contact .contact-reference .contact-reference-info h5 a:hover{
 footer .newsletter .box .social-media ul li:hover{
     filter: brightness(1.3);
     scale: 1.3;
+    transition: 0.5s;
 }
