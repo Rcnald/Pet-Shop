@@ -36,3 +36,63 @@
     bottom: 5px;
     left: 0;
 }
+
+header nav ul li a:hover,
+.user-account a:hover{
+    opacity: 60%;
+}
+
+.highlight-content button:hover{
+    filter: brightness(1.3);
+    scale: 1.1;
+}
+
+#clientSignUpModal form fieldset:last-child input:hover{
+    filter: brightness(1.3);
+}
+
+#clientSignUpModal form fieldset:last-child button:hover{
+    filter: brightness(.9);
+}
+
+#clientSignUpModal .insert-data p strong:hover{
+    color: blueviolet;
+}
+
+#clientSignUpModal .insert-data p strong:hover::after{
+    content: " ";
+    width: 7rem;
+    height: 1px;
+    border-radius: 50rem;
+    background: rgba(91,33,255,0.7);
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+}
+
+#animalSignUpModal form fieldset + input:hover{
+    filter: brightness(1.3);
+}
+
+.sign-data-content .data .buttons a:hover{
+    scale: 1.1;
+    filter: brightness(1.3);
+}
+
+footer nav li a:hover .marker{
+    opacity: 800%;
+}
+
+footer .newsletter .box .send-email button:hover{
+    filter: brightness(1.3);
+    scale: 1.1;
+}
+
+footer .contact .contact-reference .contact-reference-info h5 a:hover{
+    opacity: 70%;
+}
+
+footer .newsletter .box .social-media ul li:hover{
+    filter: brightness(1.3);
+    scale: 1.3;
+}

@@ -131,10 +131,20 @@ function openModalAnimal(){
     openModal(animalSignUpModal)
 }
 
+function closeModalClient(){
+    closeModal(clientSignUpModal)
+}
+
 function openModal(whichModal){
     whichModal.showModal()
     whichModal.classList.add('displayFlex')
     scrollBar.classList.add('overflowHidden')
+}
+
+function closeModal(whichModal){
+    whichModal.close()
+    whichModal.classList.remove('displayFlex')
+    scrollBar.classList.remove('overflowHidden')
 }
 
 function showPassword() {
@@ -173,3 +183,9 @@ dialog1.addEventListener('click', function (event) {
         scrollBar.classList.remove('overflowHidden')
     }
 });
+
+const Input = document.querySelector('footer .newsletter .box .send-email input')
+
+function resetInput(){
+    Input.value = ""
+}

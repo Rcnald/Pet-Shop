@@ -149,7 +149,7 @@
                 </fieldset>
             </form>
 
-            <p>Já tem uma conta?<strong tabindex="7 "> Não ligo</strong></p>
+            <p>Já tem uma conta?<strong tabindex="7 " onclick="closeModalClient()"> Não ligo</strong></p>
         </div>
 
         <picture class="backimage">
@@ -250,7 +250,7 @@
                         <img src="./assets/phone.svg" alt="Telefone">
                     </picture>
                     <div class="contact-reference-info">
-                        <h5> <a href="tel:918929043121">(+91) 8929043121</a></h5>
+                        <h5><a href="tel:918929043121">(+91) 8929043121</a></h5>
                         <p>Dúvidas? Ligue-nos 24hrs</p>
                     </div>
                 </div>
@@ -288,7 +288,7 @@
                     <p>Seja o primeiro da fila! Receba nossas últimas notícias diretamente na sua caixa de entrada.</p>
                     <div class="send-email">
                         <input type="email" name="sendEmail" id="sendEmail" placeholder="Email">
-                        <button>
+                        <button onclick="resetInput()">
                             <img src="./assets/arrow-right.svg" alt="Flecha">
                         </button>
                     </div>
