@@ -271,7 +271,7 @@ header nav ul li a,
     height: 6rem;
 }
 
-#clientSignUpModal form fieldset:first-child input{
+#clientSignUpModal form fieldset input{
     border: none;
     box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.06);
     border-radius: 0.6rem;
@@ -280,23 +280,26 @@ header nav ul li a,
     color: #808080;
 }
 
-#clientSignUpModal form fieldset:first-child input::placeholder{
+#clientSignUpModal form fieldset input::placeholder{
     color: #aaaaaa;
 }
 
-#clientSignUpModal form fieldset:first-child input:focus{
+#clientSignUpModal form fieldset input:focus{
     outline: none;
 }
 
-#clientSignUpModal form fieldset:first-child .passwordFildset{
+#clientSignUpModal form fieldset:nth-child(2){
     display: flex;
     align-items: center;
+    position: relative;
 }
 
-#clientSignUpModal form fieldset:first-child .passwordFildset i{
+#clientSignUpModal form fieldset:nth-child(2) i{
+    position: absolute;
     cursor: pointer;
     scale: 2;
-    margin-left: -35px;
+    bottom: 25px;
+    right: 30px;
 }
 
 /* - */
@@ -316,6 +319,7 @@ header nav ul li a,
     border-radius: 0.6rem;
     border: none;
     cursor: pointer;
+    padding: 0;
 }
 
 #clientSignUpModal form fieldset:last-child button{

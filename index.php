@@ -102,17 +102,17 @@
                 <p>Começe adicionando seu animalzinho a sua lista de pets</p>
             </div>
 
-            <form action="./index.html" method="post" id="animalSignUp">
+            <form action="./code/insertAnimal.php" method="post" id="animalSignUp">
                 <fieldset>
-                    <input type="text" id="name" name="name" placeholder="Nome">
-                    <input type="text" id="raca" name="raca" placeholder="Raça">
-                    <input type="number" id="idade" name="number" placeholder="Idade">
+                    <input type="text" id="animalName" name="animalName" placeholder="Nome">
+                    <input type="text" id="animalRaca" name="animalRaca" placeholder="Raça">
+                    <input type="number" id="animalIdade" name="animalIdade" placeholder="Idade">
                     <div class="select-box">
-                        <select name="porte" id="porte">
+                        <select name="animalPorte" id="animalPorte">
                             <option value="" disabled selected>Porte</option>
-                            <option value="pequeno">Pequeno</option>
-                            <option value="medio">Médio</option>
-                            <option value="grande">Grande</option>
+                            <option value="pequeno" id="pequeno">Pequeno</option>
+                            <option value="medio" id="medio">Médio</option>
+                            <option value="grande" id="grande">Grande</option>
                         </select>
                         <span class="custom-arrow"></span>
                     </div>
@@ -130,14 +130,15 @@
                 <p>Vamos começar com um desconto de 30% ao criar sua conta!</p>
             </div>
 
-            <form action="./index.html" method="post" id="clientSignUp">
+            <form action="./code/insertClient.php" method="post" id="clientSignUp">
                 <fieldset>
-                    <input type="text" id="name" name="name" placeholder="Nome" tabindex="1">
-                    <input type="email" id="email" name="email" placeholder="Email" tabindex="2">
-                    <div class="passwordFildset">
-                        <input type="password" id="clientPassword" name="password" placeholder="Senha" tabindex="3">
-                        <i class="bi bi-eye-slash" id="togglePassword" onclick="showPassword()" tabindex="4"></i>
-                    </div>
+                    <input type="text" id="clientName" name="clientName" placeholder="Nome" tabindex="1">
+                    <input type="email" id="clientEmail" name="clientEmail" placeholder="Email" tabindex="2">
+                </fieldset>
+                
+                <fieldset>
+                    <input type="password" id="clientPassword" name="clientPassword" placeholder="Senha" tabindex="3">
+                    <i class="bi bi-eye-slash" id="togglePassword" onclick="showPassword()" tabindex="4"></i>
                 </fieldset>
 
                 <fieldset>
@@ -158,6 +159,12 @@
     </dialog>
 
 
+    <?php
+        include "./code/conect.php";
+        $queryAnimal = mysqli_query($sql, "select * from animal");
+        $queryClient = mysqli_query($sql, "select * from cliente");
+    ?>
+
     <section class="sign-up-data displayNone" id="sign-up-data">
         <div class="sign-up-title">
             <h5>DADOS</h5>
@@ -173,29 +180,45 @@
             </picture>
             <div class="sign-up-data-client displayFlex" id="sign-up-data-client">
                 <div class="sign-data-content">
-                    <article class="data">
-                        <article>
-                            <input type="text" value="">
+                <?php
+                    while($row = mysqli_fetch_array($queryClient)){
+                        $codigoClient = $row['codigoClient'];
+                        $clientName = $row['clientName'];
+                        $clientEmail = $row['clientEmail'];
+                        $clientSenha = $row['clientPassword'];
+                    
+                        echo"
+
+                        <article class='data'>
+                        <article hidden>
+                            <p>$codigoClient</p>
                         </article>
         
                         <hr>    
         
                         <article>
-                            <input type="text" value="">
+                            $clientName
                         </article>
         
                         <hr>
         
                         <article>
-                            <input type="number" value="">
+                            $clientEmail
+                        </article>
+
+                        <article>
+                            $clientSenha
                         </article>
         
-                        <div class="buttons">
-                            <a href="">Editar</a>
-                            <a href="">Excluir</a>
-                            <a href="">Salvar</a>
+                        <div class='buttons'>
+                            <a href=''>Editar</a>
+                            <a href=''>Excluir</a>
+                            <a href=''>Salvar</a>
                         </div>
                     </article>
+                            ";
+                    }
+                ?>              
                 </div>
             </div>
     
