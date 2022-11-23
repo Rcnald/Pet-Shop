@@ -756,7 +756,7 @@ select {
     margin: 0 0 3rem 0;
 }
 
-.sign-data-content .data .buttons a{
+/* .sign-data-content .data .buttons a{
     width: 100px;
     height: 46px;
     display: flex;
@@ -768,12 +768,7 @@ select {
     font-size: 2rem;
     font-weight: 800;
     border-radius: 1rem;
-}
-
-.sign-data-content .data .buttons a:nth-child(2),
-.sign-data-content .data .buttons a:nth-child(3){
-    display: flex;
-}
+} */
 
 /* --- */
 /* footer */

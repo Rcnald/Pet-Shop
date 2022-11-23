@@ -208,8 +208,8 @@
                             </article>
                         
                             <div class='buttons'>
-                                <a href=''>Editar</a>
-                                <a href=\"./code/deleteClient.php?codigoClient=$codigoClient\" id=\"$codigoClient\">Excluir</a>
+                                <a id='editClient'>Editar</a>
+                                <a href=\"./code/deleteClient.php?codigoClient=$codigoClient\" id=\"$codigoClient\" class=\"displayNone\">Excluir</a>
                                 <a href=''>Salvar</a>
                             </div>
 

@@ -21,6 +21,8 @@ openAnimalSignUp.addEventListener('click', openModalAnimal)
 const signUpDataClient = document.querySelector('#sign-up-data-client')
 const signUpDataAnimal = document.querySelector('#sign-up-data-animal')
 
+const showEditButtons = document.getElementById('editClient')
+
 openData.addEventListener('click', openDataSignUp)
 
 function openDataSignUp(){
