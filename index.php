@@ -190,7 +190,7 @@
                         echo"
 
                         <article class='data'>
-                        <article hidden>
+                        <article class='displayNone'>
                             <p>$codigoClient</p>
                         </article>
         
