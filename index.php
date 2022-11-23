@@ -190,32 +190,30 @@
                         echo"
 
                         <article class='data'>
-                        <article class='displayNone'>
-                            <p>$codigoClient</p>
-                        </article>
-        
-                        <hr>    
-        
-                        <article>
-                            $clientName
-                        </article>
-        
-                        <hr>
-        
-                        <article>
-                            $clientEmail
-                        </article>
+                            
+                            <article>
+                                <p>$clientName</p>
+                            </article>
+                        
+                            <hr>
+                        
+                            <article>
+                                <p>$clientEmail</p>
+                            </article>
 
-                        <article>
-                            $clientSenha
+                            <hr>
+
+                            <article>
+                                <p>$clientSenha</p>
+                            </article>
+                        
+                            <div class='buttons'>
+                                <a href=''>Editar</a>
+                                <a href=\"./code/deleteClient.php?codigoClient=$codigoClient\" id=\"$codigoClient\">Excluir</a>
+                                <a href=''>Salvar</a>
+                            </div>
+
                         </article>
-        
-                        <div class='buttons'>
-                            <a href=''>Editar</a>
-                            <a href=''>Excluir</a>
-                            <a href=''>Salvar</a>
-                        </div>
-                    </article>
                             ";
                     }
                 ?>              
@@ -224,35 +222,50 @@
     
             <div class="sign-up-data-animal displayNone" id="sign-up-data-animal">
                 <div class="sign-data-content">
-                    <article class="data">
-                        <article>
-                            <input type="text" value="">
+                <?php
+                    while($row = mysqli_fetch_array($queryAnimal)){
+                        $codigoAnimal = $row['codigoAnimal'];
+                        $animalName = $row['animalName'];
+                        $animalRaca = $row['animalRaca'];
+                        $animalIdade = $row['animalIdade'];
+                        $animalPorte = $row['animalPorte'];
+                    
+                        echo"
+
+                        <article class='data'>
+                            
+                            <article>
+                                <p>$animalName</p>
+                            </article>
+                        
+                            <hr>
+                        
+                            <article>
+                                <p>$animalRaca</p>
+                            </article>
+
+                            <hr>
+
+                            <article>
+                                <p>$animalIdade</p>
+                            </article>
+
+                            <hr>
+
+                            <article>
+                                <p>$animalPorte</p>
+                            </article>
+                        
+                            <div class='buttons'>
+                                <a href=''>Editar</a>
+                                <a href=\"./code/deleteAnimal.php?codigoAnimal=$codigoAnimal\" id=\"$codigoAnimal\">Excluir</a>
+                                <a href=''>Salvar</a>
+                            </div>
+
                         </article>
-        
-                        <hr>    
-        
-                        <article>
-                            <input type="text" value="">
-                        </article>
-        
-                        <hr>
-        
-                        <article>
-                            <input type="number" value="">
-                        </article>
-        
-                        <hr>
-        
-                        <article>
-                            <input type="text" value="">
-                        </article>
-        
-                        <div class="buttons">
-                            <a href="">Editar</a>
-                            <a href="">Excluir</a>
-                            <a href="">Salvar</a>
-                        </div>
-                    </article>
+                            ";
+                    }
+                ?>     
                 </div>
             </div>
             <picture class="cat">
