@@ -208,11 +208,9 @@
                             </article>
                         
                             <div class='buttons'>
-                                <a id='editClient'>Editar</a>
-                                <a href=\"./code/deleteClient.php?codigoClient=$codigoClient\" id=\"$codigoClient\" class=\"displayNone\">Excluir</a>
-                                <a href=''>Salvar</a>
+                                <a onclick=\"openModalClientEdit()\">Editar</a>
+                                <a href=\"./code/deleteClient.php?codigoClient=$codigoClient\" id=\"$codigoClient\">Excluir</a>
                             </div>
-
                         </article>
                             ";
                     }
@@ -255,11 +253,10 @@
                             <article>
                                 <p>$animalPorte</p>
                             </article>
-                        
+
                             <div class='buttons'>
-                                <a href=''>Editar</a>
+                                <a id=\"$codigoAnimal\" onclick=\"openModalAnimalEdit()\" class=\"animalEdit\">Editar</a>
                                 <a href=\"./code/deleteAnimal.php?codigoAnimal=$codigoAnimal\" id=\"$codigoAnimal\">Excluir</a>
-                                <a href=''>Salvar</a>
                             </div>
 
                         </article>

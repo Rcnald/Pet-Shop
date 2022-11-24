@@ -21,8 +21,6 @@ openAnimalSignUp.addEventListener('click', openModalAnimal)
 const signUpDataClient = document.querySelector('#sign-up-data-client')
 const signUpDataAnimal = document.querySelector('#sign-up-data-animal')
 
-const showEditButtons = document.getElementById('editClient')
-
 openData.addEventListener('click', openDataSignUp)
 
 function openDataSignUp(){
@@ -104,6 +102,8 @@ document.onkeydown = function(event){
     if(event.key === 'Escape'){
         clientSignUpModal.classList.remove('displayFlex')
         animalSignUpModal.classList.remove('displayFlex')
+        clientEditModal.classList.remove('displayFlex')
+        animalEditModal.classList.remove('displayFlex')
         scrollBar.classList.remove('overflowHidden')
     }
 }
@@ -169,6 +169,8 @@ let dialog = document.getElementsByTagName('dialog')[0];
           dialog.close();
           clientSignUpModal.classList.remove('displayFlex')
           animalSignUpModal.classList.remove('displayFlex')
+          clientEditModal.classList.remove('displayFlex')
+          animalEditModal.classList.remove('displayFlex')
           scrollBar.classList.remove('overflowHidden')
       }
 });
@@ -182,6 +184,38 @@ dialog1.addEventListener('click', function (event) {
         dialog1.close();
         clientSignUpModal.classList.remove('displayFlex')
         animalSignUpModal.classList.remove('displayFlex')
+        clientEditModal.classList.remove('displayFlex')
+        animalEditModal.classList.remove('displayFlex')
+        scrollBar.classList.remove('overflowHidden')
+    }
+});
+
+let dialog2 = document.getElementsByTagName('dialog')[2];
+dialog2.addEventListener('click', function (event) {
+    let rect2 = dialog2.getBoundingClientRect();
+    let isInDialog2=(rect2.top <= event.clientY && event.clientY <= rect2.top + rect2.height
+      && rect2.left <= event.clientX && event.clientX <= rect2.left + rect2.width);
+    if (!isInDialog2) {
+        dialog2.close();
+        clientSignUpModal.classList.remove('displayFlex')
+        animalSignUpModal.classList.remove('displayFlex')
+        clientEditModal.classList.remove('displayFlex')
+        animalEditModal.classList.remove('displayFlex')
+        scrollBar.classList.remove('overflowHidden')
+    }
+});
+
+let dialog3 = document.getElementsByTagName('dialog')[3];
+dialog3.addEventListener('click', function (event) {
+    let rect3 = dialog3.getBoundingClientRect();
+    let isInDialog3=(rect3.top <= event.clientY && event.clientY <= rect3.top + rect3.height
+      && rect3.left <= event.clientX && event.clientX <= rect3.left + rect3.width);
+    if (!isInDialog3) {
+        dialog3.close();
+        clientSignUpModal.classList.remove('displayFlex')
+        animalSignUpModal.classList.remove('displayFlex')
+        clientEditModal.classList.remove('displayFlex')
+        animalEditModal.classList.remove('displayFlex')
         scrollBar.classList.remove('overflowHidden')
     }
 });
