@@ -1,5 +1,3 @@
-@import url(./style.css);
-
 .content-main-subject article:hover{
     scale: 1.1;
     filter: brightness(0.98);

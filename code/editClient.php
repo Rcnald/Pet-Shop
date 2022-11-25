@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <title>Vetic - Pet shop</title>
 </head>
-<body>
+<body onload="clientSignUpModal.showModal()">
     <picture class="background-body">
         <img src="../assets/bg.svg" alt="Fundo do background">
     </picture>
