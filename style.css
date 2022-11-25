@@ -633,6 +633,11 @@ select {
     min-height: 26.8rem;
 }
 
+.sign-up-data a{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
 .sign-up-data-container{
     position: relative;
     display: flex;
@@ -713,8 +718,11 @@ select {
 /* inputs */
 
 .sign-data-content{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 120rem;
+    min-height: 26.8rem;
     width: 100%;
     z-index: 1;
 } 

@@ -106,8 +106,8 @@
 
         <div class="insert-data">
             <div class="data-title">
-                <h4>Cadastre seu pet</h4>
-                <p>Começe adicionando seu animalzinho a sua lista de pets</p>
+                <h4>Editar animal</h4>
+                <p>Querendo editar algum dado? sinta-se livre para alterar oque quiser!</p>
             </div>
 
             <form action="../code/saveAnimal.php" method="post" id="animalSignUp">
@@ -127,7 +127,7 @@
                     </div>
                 </fieldset>
 
-                <input type="submit" value="Adicionar pet">
+                <input type="submit" value="Salvar alterações">
             </form>
         </div>
     </dialog>
