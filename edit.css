@@ -1,0 +1,1097 @@
+:root{
+    font-size: 62.5%;
+
+    --primary-color: #193A6A;
+    --secondary-color: #1C103B;
+    --accent-color: #EBF1FA;
+    --accent-secondary-color: #F6FAFF;
+    --white-color : #FFF;
+    --black-color: #000;
+    --copyright-color: #675D6B;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    max-width: 1920px;
+    min-height: 100%;
+    width: 100%;
+    margin: auto;
+    font-family: 'Nunito', sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.background-body img{
+    position: absolute;
+    right: 0;
+    width: 55vw;
+    z-index: -1000;
+}   
+
+/* --- */
+/* header */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1920px;
+    width: 100%;
+    padding: 3rem 11rem;
+}
+
+/* nav */
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+header nav ul li a, 
+.user-account a{
+    color: var(--black-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* user account */
+
+.user-account a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.user-account a img{
+    border-radius: 50rem;
+}
+
+/* --- */
+/* highlight */
+
+.highlight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.highlight-content .content-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.highlight-content .content-text h1{
+    font-size: 6.8rem;
+    color: var(--primary-color);
+    line-height: 8rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.highlight-content .content-text p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;  
+    text-align: center  
+}
+
+/* button */
+
+.highlight-content button{
+    background: var(--primary-color);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    border: none;
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+}
+
+/* content main subject */
+
+.content-main-subject{
+    display: flex;
+    gap: 3rem;
+}
+
+.content-main-subject article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.content-main-subject article picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50rem;
+    background: var(--accent-color);
+    margin-bottom: -3.5rem;
+    z-index: 1;
+}
+
+.content-main-subject article .box{
+    width: 23.3rem;
+    height: 11.5rem;
+    background: var(--white-color);
+    border: 0.2rem solid var(--accent-color);
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-main-subject article .box h5{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.highlight .cat img, .highlight .dog img, .highlight .dog, .highlight .cat{
+    width: 50rem;
+    height: 60rem;
+}
+
+/* --- */
+/* sign up client */
+
+
+
+#clientSignUpModal,
+#clientSignUpModalEdit{
+    max-width: 128rem;
+    width: 90%;
+    height: 83.2rem;
+    background: var(--white-color);
+    margin: auto;
+    border: none;
+    z-index: 1000;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+/* - */
+/* bg */
+
+#clientSignUpModal::backdrop,
+#animalSignUpModal::backdrop,
+#clientSignUpModalEdit::backdrop,
+#animalSignUpModalEdit::backdrop{
+    background: rgba(8, 8, 8, .5);
+}
+
+/* - */
+/* data */
+
+#clientSignUpModal .insert-data,
+#clientSignUpModalEdit .insert-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    gap: 7.8rem;
+    height: 83.2rem;
+}
+
+#clientSignUpModal .insert-data .data-title,
+#clientSignUpModalEdit .insert-data .data-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.4rem;
+}
+
+#clientSignUpModal .insert-data .data-title h4,
+#clientSignUpModalEdit .insert-data .data-title h4{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+#clientSignUpModal .insert-data .data-title p,
+#clientSignUpModalEdit .insert-data .data-title p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+/* - */
+/* input */
+
+#clientSignUpModal .insert-data form fieldset,
+#clientSignUpModalEdit .insert-data form fieldset{
+    display: flex;  
+    flex-direction: column;
+    border: none;
+}
+
+#clientSignUpModal .insert-data form,
+#clientSignUpModalEdit .insert-data form{
+    max-width: 42rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+#clientSignUpModal form fieldset:first-child,
+#clientSignUpModalEdit form fieldset:first-child{
+    gap: 3.6rem;
+}
+
+#clientSignUpModal form fieldset input,
+#clientSignUpModal form fieldset button,
+#clientSignUpModalEdit form fieldset input,
+#clientSignUpModalEdit form fieldset button{
+    max-width: 42rem;
+    width: 100%;
+    height: 6rem;
+}
+
+#clientSignUpModal form fieldset input,
+#clientSignUpModalEdit form fieldset input{
+    border: none;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 0.6rem;
+    padding: 2.5rem;
+    font-size: 1.6rem;
+    color: #808080;
+}
+
+#clientSignUpModal form fieldset input::placeholder,
+#clientSignUpModalEdit form fieldset input::placeholder{
+    color: #aaaaaa;
+}
+
+#clientSignUpModal form fieldset input:focus,
+#clientSignUpModalEdit form fieldset input:focus{
+    outline: none;
+}
+
+#clientSignUpModal form fieldset:nth-child(2),
+#clientSignUpModalEdit form fieldset:nth-child(2){
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#clientSignUpModal form fieldset:nth-child(2) i,
+#clientSignUpModalEdit form fieldset:nth-child(2) i{
+    position: absolute;
+    cursor: pointer;
+    scale: 2;
+    bottom: 25px;
+    right: 30px;
+}
+
+/* - */
+/* button */
+
+#clientSignUpModal form fieldset:last-child,
+#clientSignUpModalEdit form fieldset:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+#clientSignUpModal form fieldset:last-child input,
+#clientSignUpModalEdit form fieldset:last-child input{
+    background: #3A3A3A;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--white-color);
+    border-radius: 0.6rem;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#clientSignUpModal form fieldset:last-child button,
+#clientSignUpModalEdit form fieldset:last-child button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #383838;
+    border: 0.3rem solid #3A3A3A;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+/* - */
+/* login message */
+
+#clientSignUpModal .insert-data p,
+#clientSignUpModalEdit .insert-data p{
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+#clientSignUpModal .insert-data p strong,
+#clientSignUpModalEdit .insert-data p strong{
+    position: relative;
+    cursor: pointer;
+}
+
+/* - */
+/* image */
+
+#clientSignUpModal .backimage img,
+#clientSignUpModal .backimage,
+#clientSignUpModalEdit .backimage img,
+#clientSignUpModalEdit .backimage{
+    max-width: 74.1rem;
+    width: 100%;
+    height: 83.2rem;
+    overflow: hidden;
+}
+
+/* #clientSignUpModal .backimage .exit{
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50rem;
+    border: 0.25rem solid black;
+    background: white;
+    margin-left: -50px;
+    margin-top: 50px;
+    content: "";
+}
+
+#clientSignUpModal .backimage .exit::before, #clientSignUpModal .backimage .exit::after{
+    content: " ";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: black;
+    transform: rotate(135deg);
+    margin-top: 8.5px;
+    margin-left: 2px;
+    border-radius: 50rem;
+}
+
+#clientSignUpModal .backimage .exit::after{
+    transform: rotate(45deg);
+} */
+
+/* --- */
+/* sign up animal */
+
+#animalSignUpModal,
+#animalSignUpModalEdit{
+    max-width: 128rem;
+    width: 90%;
+    height: 83.2rem;
+    background: var(--white-color);
+    margin: auto;
+    border: none;
+    z-index: 1000;
+    gap: 2rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+/* - */
+/* image */
+
+#animalSignUpModal .backimage img,
+#animalSignUpModal .backimage,
+#animalSignUpModalEdit .backimage img,
+#animalSignUpModalEdit .backimage{
+    max-width: 74.6rem;
+    width: 100%;
+    height: 84.2rem;
+    overflow: hidden;
+}
+
+/* - */
+/* data */
+
+#animalSignUpModal .insert-data,
+#animalSignUpModalEdit .insert-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    gap: 7.8rem;
+    height: 83.2rem;
+}
+
+#animalSignUpModal .insert-data .data-title,
+#animalSignUpModalEdit .insert-data .data-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.4rem;
+}
+
+#animalSignUpModal .insert-data .data-title h4,
+#animalSignUpModalEdit .insert-data .data-title h4{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+#animalSignUpModal .insert-data .data-title p,
+#animalSignUpModalEdit .insert-data .data-title p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+/* - */
+/* input */
+
+#animalSignUpModal .insert-data form fieldset,
+#animalSignUpModalEdit .insert-data form fieldset{
+    display: flex;  
+    flex-direction: column;
+    border: none;
+}
+
+#animalSignUpModal .insert-data form,
+#animalSignUpModalEdit .insert-data form{
+    max-width: 42rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+#animalSignUpModal form fieldset,
+#animalSignUpModalEdit form fieldset{
+    gap: 3.6rem;
+}
+
+#animalSignUpModal form fieldset input,
+#animalSignUpModalEdit form fieldset input{
+    border: none;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 0.6rem;
+    padding: 2.5rem;
+    font-size: 1.6rem;
+    color: #808080;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+
+#animalSignUpModal form fieldset input::placeholder,
+#animalSignUpModalEdit form fieldset input::placeholder{
+    color: #aaaaaa;
+}
+
+#animalSignUpModal form fieldset input:focus,
+#animalSignUpModal form fieldset select:focus,
+#animalSignUpModalEdit form fieldset input:focus,
+#animalSignUpModalEdit form fieldset select:focus{
+    outline: none;
+}
+
+/* - */
+/* select */
+
+#animalSignUpModal form fieldset .select-box,
+#animalSignUpModalEdit form fieldset .select-box{
+    position: relative;
+}
+
+#animalSignUpModal form fieldset .select-box select,
+#animalSignUpModalEdit form fieldset .select-box select{
+    max-width: 42rem;
+    width: 100%;
+    height: 6rem;
+    border-radius: 0.6rem;
+    border: none;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.06);
+    padding: 0 2.5rem;
+    font-size: 1.6rem;
+    color: #808080;
+    cursor: pointer;
+}
+
+#animalSignUpModal form fieldset .select-box .custom-arrow,
+#animalSignUpModalEdit form fieldset .select-box .custom-arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 3rem;
+    height: 100%;
+    background: var(--white-color);
+    filter: brightness(.96);
+    pointer-events: none;/* o clique conta visualemente mas pro "backend" ele passa reto */
+}
+
+#animalSignUpModal form fieldset .select-box .custom-arrow::before,
+#animalSignUpModal form fieldset .select-box .custom-arrow::after,
+#animalSignUpModalEdit form fieldset .select-box .custom-arrow::before,
+#animalSignUpModalEdit form fieldset .select-box .custom-arrow::after{
+    --size: 0.6em;
+
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#animalSignUpModal form fieldset .select-box .custom-arrow::before,
+#animalSignUpModalEdit form fieldset .select-box .custom-arrow::before{
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid rgba(0, 0, 0, .5);
+    top: 40%;
+}
+
+#animalSignUpModal form fieldset .select-box .custom-arrow::after,
+#animalSignUpModalEdit form fieldset .select-box .custom-arrow::after{
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid rgba(0, 0, 0, .5);
+    top: 55%;
+}
+
+/* - */
+/* button */
+
+#animalSignUpModal form fieldset + input,
+#animalSignUpModalEdit form fieldset + input{
+    max-width: 42rem;
+    width: 100%;
+    height: 6rem;
+    background: #3A3A3A;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--white-color);
+    border-radius: 0.6rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* --- */
+/* sign data */
+
+.sign-up-data{
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    margin: 10rem auto;
+    max-width: 162.2rem;
+    width: 100%;
+    min-height: 26.8rem;
+}
+
+.sign-up-data-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    max-width: 162.2rem;
+    width: 100%;
+    min-height: 26.8rem;
+    gap: 3rem;
+    background: rgba(84, 115, 159, 0.06);
+    backdrop-filter: blur(15px);    
+    border-radius: 2.6rem;
+}
+
+.sign-up-data .sign-up-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    gap: 1.5rem;
+    margin: 0 0 1rem 0;
+}
+
+.sign-up-data .sign-up-title h5{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.show-sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.sign-up-data .sign-up-title .show-sign-up h2{
+    font-size: 4.6rem;
+    font-weight: 800;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.sign-up-data-animal,
+.sign-up-data-client{
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3.7rem 0 0 0;  
+    max-width: 162.2rem;
+    width: 100%;
+    min-height: 26.8rem;
+    position: relative;
+}
+
+/* - */
+/* image */
+
+.sign-up-data .dog{
+    position: absolute;
+    bottom: -30px;
+    left: 38px;
+}
+
+.sign-up-data .cat{
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    overflow: hidden;
+}
+
+.sign-up-data .cat img{
+    position: relative;
+    bottom: -70px;
+}
+
+/* inputs */
+
+.sign-data-content{
+    display: block;
+    max-width: 120rem;
+    width: 100%;
+    z-index: 1;
+} 
+
+.sign-data-content .data{
+    display: flex;
+    gap: 3rem;
+}
+
+.sign-data-content .data:last-child{
+    padding: 0 0 9rem 0;
+}
+
+.sign-data-content .data article{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0 0 3rem 0;
+}
+
+.sign-data-content .data hr { 
+    border: 0.5px solid rgba(91,33,255,0.07); 
+    border-radius: 40rem 40rem 0 0;
+}
+
+.sign-data-content .data article input{
+    width: 20rem;
+    height: 4.6rem;
+    padding: 0.5rem;
+    border: double 1.5px transparent;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(123deg, rgba(23,45,78,1) -10%, rgba(91,33,255,0.54) 64%, rgba(61,107,175,1) 92%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.sign-up-data-client .sign-data-content .data article:first-child p,
+.sign-up-data-client .sign-data-content .data article:last-child p{
+    width: 20rem;
+    height: 4.6rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.sign-up-data-client .sign-data-content .data article p{
+    width: 30rem;
+    height: 4.6rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.sign-up-data-animal .sign-data-content .data article p{
+    width: 15rem;
+    height: 4.6rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.sign-up-data-animal .sign-data-content .data article:nth-child(3) p{
+    width: 10rem;
+    height: 4.6rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.sign-up-data-animal .sign-data-content .data article:nth-child(5) p{
+    width: 5rem;
+    height: 4.6rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.sign-data-content .data article h6{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    color: var(--primary-color);
+}
+
+.sign-data-content .data .buttons{
+    display: flex;
+    align-items: flex-end;
+    gap: 3rem;
+    margin: 0 0 3rem 0;
+}
+
+.sign-data-content .data .buttons a{
+    width: 100px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+/* --- */
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 137rem;
+    width: 100%;
+    margin: auto auto 0;
+}
+
+footer h6{
+    font-size: 2.4rem;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    color: var(--secondary-color);
+}
+
+footer .footer-information{
+    width: 100%;
+    display: flex;
+    margin: auto auto 3rem;
+    justify-content: space-between;
+}
+
+/* - */
+/* contact */
+
+footer .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    max-width: 30rem;
+    width: 100%;
+    height: 25.4rem;
+}
+
+footer .contact .website-logo img, footer .website-logo{
+    height: 5.4rem;
+}
+
+footer .contact p{
+    font-family: 'Lato', sans-serif; 
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    text-align: left;
+}
+
+footer .contact .contact-reference{
+    display: flex;
+    gap: 1.5rem;
+}
+
+footer .contact .contact-reference .phone img{
+    height: 6rem;
+    width: 5.1rem;
+}
+
+footer .contact .contact-reference .contact-reference-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .contact .contact-reference .contact-reference-info h5 a{
+    font-size: 2.4rem;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    color: var(--primary-color);
+}
+
+/* - */
+/* schedule */
+
+footer .schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0 0 0;
+}
+
+footer .schedule .box{
+    max-width: 32rem;
+    width: 100%;
+    height: 18.3rem;
+    background: var(--accent-secondary-color);
+    border-radius: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2.6rem 2.6rem 2.6rem;
+    justify-content: space-between;
+    grid-row-gap: 3rem;
+    padding: 3rem;
+}
+
+footer .schedule .box p:nth-child(1),
+footer .schedule .box p:nth-child(2),
+footer .schedule .box p:nth-child(3){
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+footer .schedule .box p:nth-child(4),
+footer .schedule .box p:nth-child(5),
+footer .schedule .box p:nth-child(6){
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+footer .schedule .box p:nth-child(1),
+footer .schedule .box p:nth-child(4){
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+footer .schedule .box p:nth-child(2),
+footer .schedule .box p:nth-child(5){
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+footer .schedule .box p:nth-child(3),
+footer .schedule .box p:nth-child(6){
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+footer .schedule .box p{
+    text-align: center;
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+footer .schedule .box p span{
+    font-weight: 700;
+}
+
+/* - */
+/* nav */
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    width: 100%;
+    height: 23.2rem;
+    gap: 4rem;
+    padding: 1rem 0 0 0;
+}   
+
+footer nav ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 18rem;
+    gap: 2rem;
+}
+
+footer nav li .marker{
+    width: 0.8rem;
+    height: 0.8rem;
+    background: var(--primary-color);
+    opacity: 20%;
+    border-radius: 30rem;
+}
+
+footer nav li a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+/* - */
+/* newsletter */
+
+footer .newsletter{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+    width: 32rem;
+    height: 23.4rem;
+    gap: 2rem;
+}
+
+footer .newsletter .box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer .newsletter .box p{
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+footer .newsletter .box .send-email{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .newsletter .box .send-email input{
+    width: 24rem;
+    height: 5rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--accent-color);
+    padding: 1.3rem;
+    font-size: 1.8rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+footer .newsletter .box .send-email input:focus{
+    outline: none;
+}
+
+footer .newsletter .box .send-email button{
+    width: 5rem;
+    height: 5rem;
+    background: var(--primary-color);
+    border-radius: 0.8rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+footer .newsletter .box .social-media ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer .newsletter .box .social-media ul a{
+    cursor: pointer;
+}
+
+/* --- */
+/* line */
+
+footer hr{
+    background: var(--primary-color);
+    opacity: 15%;
+}
+
+/* --- */
+/* copyright */
+
+footer .footer-copyright{
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: var(--copyright-color);
+    display: flex;
+    justify-content: center;
+    padding: 0 0 10rem 0;
+}
+
+.displayFlex{
+    display: flex;
+}
+
+.displayNone{
+    display: none;
+}
+
+.overflowHidden{
+    overflow: hidden;
+}

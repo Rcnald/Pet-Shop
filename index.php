@@ -208,7 +208,7 @@
                             </article>
                         
                             <div class='buttons'>
-                                <a onclick=\"openModalClientEdit()\">Editar</a>
+                                <a href=\"./code/editClient.php?codigoClient=$codigoClient\">Editar</a>
                                 <a href=\"./code/deleteClient.php?codigoClient=$codigoClient\" id=\"$codigoClient\">Excluir</a>
                             </div>
                         </article>
@@ -255,7 +255,7 @@
                             </article>
 
                             <div class='buttons'>
-                                <a id=\"$codigoAnimal\" onclick=\"openModalAnimalEdit()\" class=\"animalEdit\">Editar</a>
+                                <a href=\"./code/editAnimal.php?codigoAnimal=$codigoAnimal\">Editar</a>
                                 <a href=\"./code/deleteAnimal.php?codigoAnimal=$codigoAnimal\" id=\"$codigoAnimal\">Excluir</a>
                             </div>
 
