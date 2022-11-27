@@ -112,16 +112,16 @@
 
             <form action="../code/saveAnimal.php" method="post" id="animalSignUp">
                 <fieldset>
-                    <input type="hidden" name="codigoAnimal" value="<?php echo $row['codigoAnimal'];?>">
-                    <input type="text" id="animalName" name="animalName" placeholder="Nome" value="<?php echo $row['animalName'];?>">
-                    <input type="text" id="animalRaca" name="animalRaca" placeholder="Raça" value="<?php echo $row['animalRaca'];?>">
-                    <input type="number" id="animalIdade" name="animalIdade" placeholder="Idade" value="<?php echo $row['animalIdade'];?>">
+                    <input type="hidden" name="codigoAnimal" value="<?php echo $row['codigoAnimal'];?>" required>
+                    <input type="text" id="animalName" name="animalName" placeholder="Nome" value="<?php echo $row['animalName'];?>" required>
+                    <input type="text" id="animalRaca" name="animalRaca" placeholder="Raça" value="<?php echo $row['animalRaca'];?>" required>
+                    <input type="number" id="animalIdade" name="animalIdade" placeholder="Idade" value="<?php echo $row['animalIdade'];?>" required>
                     <div class="select-box">
-                        <select name="animalPorte" id="animalPorte">
+                        <select name="animalPorte" id="animalPorte" required>
                             <option disabled selected><?php echo $row['animalPorte'];?></option>
-                            <option value="pequeno" id="pequeno">Pequeno</option>
-                            <option value="medio" id="medio">Médio</option>
-                            <option value="grande" id="grande">Grande</option>
+                            <option value="Pequeno" id="pequeno">Pequeno</option>
+                            <option value="Médio" id="medio">Médio</option>
+                            <option value="Grande" id="grande">Grande</option>
                         </select>
                         <span class="custom-arrow"></span>
                     </div>

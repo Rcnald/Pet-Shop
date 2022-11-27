@@ -87,7 +87,7 @@ header nav ul li a:hover,
 
 .sign-data-content .none-message:hover::after{
     content: " ";
-    width: 7rem;
+    width: 24.8rem;
     height: 1px;
     border-radius: 50rem;
     background: rgba(91,33,255,0.7);

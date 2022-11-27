@@ -109,12 +109,12 @@
             <form action="../code/saveClient.php" method="post" id="clientSignUp">
                 <fieldset>
                     <input type="hidden" name="codigoClient" value="<?php echo $row['codigoClient'];?>">
-                    <input type="text" id="clientName" name="clientName" placeholder="Nome" tabindex="1" value="<?php echo $row['clientName'];?>">
-                    <input type="email" id="clientEmail" name="clientEmail" placeholder="Email" tabindex="2" value="<?php echo $row['clientEmail'];?>">
+                    <input type="text" id="clientName" name="clientName" placeholder="Nome" tabindex="1" value="<?php echo $row['clientName'];?>" required>
+                    <input type="email" id="clientEmail" name="clientEmail" placeholder="Email" tabindex="2" value="<?php echo $row['clientEmail'];?>" required>
                 </fieldset>
                 
                 <fieldset>
-                    <input type="text" id="clientPassword" name="clientPassword" placeholder="Senha" tabindex="3" value="<?php echo $row['clientPassword'];?>">
+                    <input type="text" id="clientPassword" name="clientPassword" placeholder="Senha" tabindex="3" value="<?php echo $row['clientPassword'];?>" required>
                 </fieldset>
 
                 <fieldset>

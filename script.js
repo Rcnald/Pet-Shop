@@ -45,14 +45,23 @@ function openDataSignUp(){
     const h6Age = document.createElement('h6')
     const h6Porte = document.createElement('h6')
 
-    const addNoneItemSignUpMessage = document.querySelector('.sign-data-content')
-    const noneItemSignUp = document.createElement('p')
+    const addNoneItemSignUpMessageC = document.querySelector('.sign-up-data-client .sign-data-content')
+    const addNoneItemSignUpMessageA = document.querySelector('.sign-up-data-animal .sign-data-content')
+    const noneItemSignUpC = document.createElement('p')
+    const noneItemSignUpA = document.createElement('p')
 
-    if(addNoneItemSignUpMessage.querySelector('.data')  === null && addNoneItemSignUpMessage.querySelector('.none-message') === null){
-        noneItemSignUp.setAttribute("onclick", "openModalAnimal()");
-        noneItemSignUp.setAttribute("class", "none-message");
-        noneItemSignUp.innerText = "Nenhum dado cadastrado."
-        addNoneItemSignUpMessage.prepend(noneItemSignUp)
+    if(addNoneItemSignUpMessageC.querySelector('.data')  === null && addNoneItemSignUpMessageC.querySelector('.none-message') === null){
+        noneItemSignUpC.setAttribute("onclick", "openModalClient()");
+        noneItemSignUpC.setAttribute("class", "none-message");
+        noneItemSignUpC.innerText = "Nenhum dado cadastrado."
+        addNoneItemSignUpMessageC.prepend(noneItemSignUpC)
+    }
+
+    if(addNoneItemSignUpMessageA.querySelector('.data')  === null && addNoneItemSignUpMessageA.querySelector('.none-message') === null){
+        noneItemSignUpA.setAttribute("onclick", "openModalAnimal()");
+        noneItemSignUpA.setAttribute("class", "none-message");
+        noneItemSignUpA.innerText = "Nenhum dado cadastrado."
+        addNoneItemSignUpMessageA.prepend(noneItemSignUpA)
     }
 
     h6NameClient.innerText = "Nome"

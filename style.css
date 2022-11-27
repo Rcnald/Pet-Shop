@@ -718,9 +718,8 @@ select {
 /* inputs */
 
 .sign-data-content{
-    display: flex;
+    display: block;
     align-items: center;
-    justify-content: center;
     max-width: 120rem;
     min-height: 26.8rem;
     width: 100%;

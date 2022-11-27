@@ -104,15 +104,15 @@
 
             <form action="./code/insertAnimal.php" method="post" id="animalSignUp">
                 <fieldset>
-                    <input type="text" id="animalName" name="animalName" placeholder="Nome">
-                    <input type="text" id="animalRaca" name="animalRaca" placeholder="Raça">
-                    <input type="number" id="animalIdade" name="animalIdade" placeholder="Idade">
+                    <input type="text" id="animalName" name="animalName" placeholder="Nome" required>
+                    <input type="text" id="animalRaca" name="animalRaca" placeholder="Raça" required>
+                    <input type="number" id="animalIdade" name="animalIdade" placeholder="Idade" required>
                     <div class="select-box">
-                        <select name="animalPorte" id="animalPorte">
+                        <select name="animalPorte" id="animalPorte" required>
                             <option value="" disabled selected>Porte</option>
-                            <option value="pequeno" id="pequeno">Pequeno</option>
-                            <option value="medio" id="medio">Médio</option>
-                            <option value="grande" id="grande">Grande</option>
+                            <option value="Pequeno" id="pequeno">Pequeno</option>
+                            <option value="Médio" id="medio">Médio</option>
+                            <option value="Grande" id="grande">Grande</option>
                         </select>
                         <span class="custom-arrow"></span>
                     </div>
@@ -132,12 +132,12 @@
 
             <form action="./code/insertClient.php" method="post" id="clientSignUp">
                 <fieldset>
-                    <input type="text" id="clientName" name="clientName" placeholder="Nome" tabindex="1">
-                    <input type="email" id="clientEmail" name="clientEmail" placeholder="Email" tabindex="2">
+                    <input type="text" id="clientName" name="clientName" placeholder="Nome" tabindex="1" required>
+                    <input type="email" id="clientEmail" name="clientEmail" placeholder="Email" tabindex="2" required>
                 </fieldset>
                 
                 <fieldset>
-                    <input type="password" id="clientPassword" name="clientPassword" placeholder="Senha" tabindex="3">
+                    <input type="password" id="clientPassword" name="clientPassword" placeholder="Senha" tabindex="3" required>
                     <i class="bi bi-eye-slash" id="togglePassword" onclick="showPassword()" tabindex="4"></i>
                 </fieldset>
 
