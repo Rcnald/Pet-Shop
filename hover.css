@@ -80,6 +80,22 @@ header nav ul li a:hover,
     transition: 0.5s;
 }
 
+.sign-data-content .none-message:hover{
+    color: blueviolet;
+    
+}
+
+.sign-data-content .none-message:hover::after{
+    content: " ";
+    width: 7rem;
+    height: 1px;
+    border-radius: 50rem;
+    background: rgba(91,33,255,0.7);
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+}
+
 footer nav li a:hover .marker{
     opacity: 800%;
 }

@@ -45,11 +45,12 @@ function openDataSignUp(){
     const h6Age = document.createElement('h6')
     const h6Porte = document.createElement('h6')
 
-    const addNoneItemSignUpMessage = document.querySelector('.sign-up-data-client .sign-data-content')
+    const addNoneItemSignUpMessage = document.querySelector('.sign-data-content')
     const noneItemSignUp = document.createElement('p')
 
-    if(addNoneItemSignUpMessage.querySelector('.data')  === null){
+    if(addNoneItemSignUpMessage.querySelector('.data')  === null && addNoneItemSignUpMessage.querySelector('.none-message') === null){
         noneItemSignUp.setAttribute("onclick", "openModalAnimal()");
+        noneItemSignUp.setAttribute("class", "none-message");
         noneItemSignUp.innerText = "Nenhum dado cadastrado."
         addNoneItemSignUpMessage.prepend(noneItemSignUp)
     }
