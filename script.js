@@ -55,6 +55,8 @@ function openDataSignUp(){
         noneItemSignUpC.setAttribute("class", "none-message");
         noneItemSignUpC.innerText = "Nenhum dado cadastrado."
         addNoneItemSignUpMessageC.prepend(noneItemSignUpC)
+        addNoneItemSignUpMessageC.style.display = "flex"
+        addNoneItemSignUpMessageC.style.justifyContent = "center"
     }
 
     if(addNoneItemSignUpMessageA.querySelector('.data')  === null && addNoneItemSignUpMessageA.querySelector('.none-message') === null){
@@ -62,6 +64,8 @@ function openDataSignUp(){
         noneItemSignUpA.setAttribute("class", "none-message");
         noneItemSignUpA.innerText = "Nenhum dado cadastrado."
         addNoneItemSignUpMessageA.prepend(noneItemSignUpA)
+        addNoneItemSignUpMessageA.style.display = "flex"
+        addNoneItemSignUpMessageA.style.justifyContent = "center"
     }
 
     h6NameClient.innerText = "Nome"
