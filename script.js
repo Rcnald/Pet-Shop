@@ -212,3 +212,7 @@ const Input = document.querySelector('footer .newsletter .box .send-email input'
 function resetInput(){
     Input.value = ""
 }
+
+function otario(){
+    alert("Acho que funcionava neh otariokkkkkkkkkkkkkkkkkkkkkkkk")
+}
