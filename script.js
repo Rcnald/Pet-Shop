@@ -176,8 +176,6 @@ let dialog = document.getElementsByTagName('dialog')[0];
           dialog.close();
           clientSignUpModal.classList.remove('displayFlex')
           animalSignUpModal.classList.remove('displayFlex')
-          clientEditModal.classList.remove('displayFlex')
-          animalEditModal.classList.remove('displayFlex')
           scrollBar.classList.remove('overflowHidden')
       }
 });
@@ -191,8 +189,6 @@ dialog1.addEventListener('click', function (event) {
         dialog1.close();
         clientSignUpModal.classList.remove('displayFlex')
         animalSignUpModal.classList.remove('displayFlex')
-        clientEditModal.classList.remove('displayFlex')
-        animalEditModal.classList.remove('displayFlex')
         scrollBar.classList.remove('overflowHidden')
     }
 });
