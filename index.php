@@ -180,7 +180,6 @@
             </picture>
             <div class="sign-up-data-client displayFlex" id="sign-up-data-client">
                 <div class="sign-data-content">
-                    <a href="">Nenhum dado cadastrado.</a>
                 <?php
                     while($row = mysqli_fetch_array($queryClient)){
                         $codigoClient = $row['codigoClient'];
