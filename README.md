@@ -2,7 +2,7 @@
 
 ## Techs
 
-- HTML
+- HTML/PHP
 - CSS
 - JS
 
