@@ -23,9 +23,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../edit.css">
     <link rel="stylesheet" href="../hover.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-    <title>Vetic - Pet shop</title>
+    <title>Vetic - Editar cliente</title>
 </head>
 <body onload="clientSignUpModal.showModal()">
     <picture class="background-body">
