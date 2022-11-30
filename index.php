@@ -144,7 +144,7 @@
                 <fieldset>
                     <input type="submit" value="Criar conta" tabindex="5">
                     
-                    <button tabindex="6" onclick="otario()">
+                    <button tabindex="6" onclick="google()">
                         <img src="./assets/google-logo.svg" alt="google logo" >
                         Criar com Google
                     </button>            

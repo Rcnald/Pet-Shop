@@ -77,19 +77,20 @@ function openDataSignUp(){
     h6Age.innerText = "Idade"
     h6Porte.innerText = "Porte"
 
-    if(addNameColumnClient.querySelector('h6') === null){
-        addNameColumnClient.prepend(h6NameClient)
-        addEmailColumn.prepend(h6Email)
-        addPasswordColumn.prepend(h6Password)
-    }
-
-    if(addNameColumnAnimal.querySelector('h6') === null){
+    if(addNoneItemSignUpMessageA.getElementsByTagName('h6') !== null){
         addNameColumnAnimal.prepend(h6NameAnimal)
         addRacaColumn.prepend(h6Raca)
         addAgeColumn.prepend(h6Age)
         addPorteColumn.prepend(h6Porte)
 
     }
+
+    if(addNoneItemSignUpMessageC.getElementsByTagName('h6') !== null){
+        addNameColumnClient.prepend(h6NameClient)
+        addEmailColumn.prepend(h6Email)
+        addPasswordColumn.prepend(h6Password)
+    }
+
     
 }
 
@@ -213,6 +214,6 @@ function resetInput(){
     Input.value = ""
 }
 
-function otario(){
-    alert("Acho que funcionava neh otariokkkkkkkkkkkkkkkkkkkkkkkk")
+function google(){
+    alert("Acho que funcionava nehkkkkkkkkkkkkkkkkkkkkkkkk")
 }
